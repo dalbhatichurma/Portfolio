@@ -20,26 +20,3 @@ footer{width:min(var(--max),calc(100% - 40px));margin:auto;border-top:1px solid 
 @keyframes blink{50%{opacity:0}}@keyframes spin{to{transform:rotate(360deg)}}@keyframes float{50%{transform:translateY(-9px)}} 
 @media(max-width:850px){.nav-links,.nav-cta{display:none}.menu-toggle{display:block}.nav.open .nav-links{display:flex;position:absolute;top:70px;left:0;right:0;flex-direction:column;padding:20px;background:rgba(6,8,13,.96);border:1px solid var(--line);border-radius:14px}.hero{grid-template-columns:1fr;min-height:auto;padding-top:145px}.hero-visual{min-height:480px}.stats{grid-template-columns:repeat(2,1fr);gap:25px}.stat:nth-child(2){border:0}.split{grid-template-columns:1fr;gap:35px}.stack-grid{grid-template-columns:repeat(2,1fr)}.stack-card:nth-child(2n){border-right:0}.project-grid{grid-template-columns:1fr}.project-head{align-items:start;gap:20px;flex-direction:column}.cta-card{flex-direction:column;align-items:start;gap:35px;padding:38px}.cta-actions{width:100%}.cta-actions .btn{justify-content:space-between}footer{flex-direction:column;gap:18px;align-items:start}}
 @media(max-width:520px){.section{padding:80px 0;width:min(100% - 28px,var(--max))}.hero h1{font-size:48px}.hero-sub{font-size:14px}.mini-proof{flex-wrap:wrap}.hero-visual{min-height:390px}.code-window pre{font-size:10px;padding:18px;min-height:280px}.orbit{display:none}.floating-chip{font-size:8px}.stats{gap:0}.stat{padding:18px 5px}.stat strong{font-size:27px}.stack-card{min-height:125px;padding:18px}.project-media{height:180px}.timeline article{grid-template-columns:55px 1fr;gap:18px}.timeline-line{left:27px}footer{font-size:9px}}
-
-/* ===== Developer Work Showcase ===== */
-.build-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
-.build-card{min-height:250px;padding:27px;border:1px solid var(--line);border-radius:17px;background:linear-gradient(145deg,rgba(255,255,255,.035),rgba(255,255,255,.012));position:relative;overflow:hidden;transition:.3s}
-.build-card:before{content:"";position:absolute;width:130px;height:130px;right:-70px;top:-70px;border-radius:50%;background:rgba(93,255,154,.08);filter:blur(4px);transition:.3s}
-.build-card:hover{transform:translateY(-6px);border-color:rgba(93,255,154,.3);box-shadow:0 22px 60px rgba(0,0,0,.3)}
-.build-card:hover:before{transform:scale(1.5)}
-.build-icon{width:42px;height:42px;display:grid;place-items:center;border:1px solid rgba(93,255,154,.2);border-radius:10px;background:rgba(93,255,154,.045);font-size:19px;margin-bottom:24px}
-.build-card h3{font:700 19px "Space Grotesk";margin-bottom:10px}
-.build-card p{font-size:11px;line-height:1.75;color:var(--muted)}
-.build-code{position:absolute;bottom:22px;left:27px;font:9px ui-monospace;color:#687588;letter-spacing:.03em}
-.build-code span{color:var(--green)}
-.dev-console{margin-top:22px;border:1px solid var(--line);border-radius:17px;overflow:hidden;background:#070b11;box-shadow:0 25px 70px rgba(0,0,0,.25)}
-.console-top{height:46px;padding:0 17px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);background:rgba(255,255,255,.025)}
-.console-title{font:700 9px ui-monospace;color:#8290a3;letter-spacing:.13em}
-.console-live{font:700 8px ui-monospace;color:var(--green);letter-spacing:.12em}.console-live i{display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--green);box-shadow:0 0 10px var(--green);margin-right:5px}
-.console-body{padding:20px 22px;font:12px/1.8 ui-monospace,SFMono-Regular,Menlo,monospace}
-.console-row{color:#d5dfeb}.console-row b{display:inline-block;width:28px;color:#364152;font-weight:400}.console-log{margin-top:15px;padding-top:14px;border-top:1px dashed rgba(255,255,255,.08);color:#687588;font-size:9px}.console-log span{color:var(--green);margin-right:5px}
-@media(max-width:1000px){.build-grid{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:520px){.build-grid{grid-template-columns:1fr}.build-card{min-height:225px}.console-body{padding:16px;font-size:9px;overflow:auto}.console-row b{width:22px}}
-
-.hero-visual .code-window{position:relative;right:auto;bottom:auto;width:min(540px,100%);transform:perspective(900px) rotateY(-7deg) rotateX(3deg);opacity:1;z-index:3}
-.hero-visual .code-window pre{min-height:350px}
